@@ -1,0 +1,13 @@
+var date = "<!=DATE=!>";
+var dateTime = <!=DATETIME=!>;
+
+var _o = <!=INFO=!>
+
+var db0 = db.getSiblingDB("log");
+var col0 = db0.getCollection( date );
+
+_o._id = dateTime;
+
+col0.insert( _o );
+
+print( 1 );

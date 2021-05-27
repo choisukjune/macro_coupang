@@ -1,0 +1,1 @@
+call node check_airplaneMode.js

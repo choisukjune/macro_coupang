@@ -1,0 +1,30 @@
+var date = "20210526";
+var dateTime = 20210526192523;
+
+var _o = {
+   "businessName" : "",
+   "businessWebsite" : "",
+   "city" : "Seoul",
+   "continent" : "Asia",
+   "country" : "South Korea",
+   "countryCode" : "KR",
+   "ipName" : "",
+   "ipType" : "Residential",
+   "isp" : "Korea Telecom",
+   "lat" : "37.566",
+   "lon" : "126.9784",
+   "org" : "Korea Telecom",
+   "query" : "222.108.69.195",
+   "region" : "Seoul",
+   "status" : "success"
+}
+
+
+var db0 = db.getSiblingDB("log");
+var col0 = db0.getCollection( date );
+
+o._id = dateTime;
+
+col0.insert( o );
+
+print( 1 );
