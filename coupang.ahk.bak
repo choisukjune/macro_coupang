@@ -88,7 +88,8 @@ Sleep, 2000
 
 findCoupang()
 
-Clipboard = 캐리오피
+;Clipboard = 캐리오피
+Clipboard = 캐리오피 토너
 send, ^v
 
 Sleep, 1500
