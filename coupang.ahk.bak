@@ -109,7 +109,7 @@ Loop, 50
 
 Sleep, 2000
 WinClose,ahk_class Chrome_WidgetWin_1
-Run,%A_ScriptDir%\test.bat
+Run,%A_ScriptDir%\reStart.bat
 
 F4::Reload
 F2::Pause
