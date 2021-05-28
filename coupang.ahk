@@ -1,6 +1,6 @@
 findCaryophy()
 {
-	ImageSearch,vx,vy,0,0,A_ScreenWidth,A_ScreenHeight,캐리오피.png
+	ImageSearch,vx,vy,0,0,A_ScreenWidth,A_ScreenHeight,caryophy.png
 	if ErrorLevel=0
 	{
 		MouseClick,Left,%vx%,%vy%
@@ -18,7 +18,6 @@ findCaryophy()
 		{
 			MouseClick, WheelDown, , , 6
 			findCaryophy()
-			;MsgBox,인식을못한다 바꿔라
 		}
 	}
 }
@@ -75,7 +74,7 @@ Run, chrome.exe
 ControlClick, x1284 y423, ahk_class Chrome_WidgetWin_1
 Sleep, 2000
 
-Clipboard = 쿠팡
+Clipboard = coupang
 
 findGoogle()
 send, ^v
@@ -89,7 +88,7 @@ Sleep, 2000
 
 findCoupang()
 
-Clipboard = 캐리오피
+Clipboard = ĳ������
 send, ^v
 
 Sleep, 1500
