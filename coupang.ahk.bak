@@ -38,6 +38,36 @@ findCoupang()
 	}
 }
 
+findGoogle()
+{
+	ImageSearch,vx,vy,0,0,A_ScreenWidth,A_ScreenHeight,google_search.png
+	if ErrorLevel=0
+	{
+		MouseClick,Left,%vx%,%vy%
+	}
+	if ErrorLevel=1
+	{
+		
+		Sleep, 2000
+		findGoogle()
+	}
+}
+
+findGoogleResult()
+{
+	ImageSearch,vx,vy,0,0,A_ScreenWidth,A_ScreenHeight,coupang_site.png
+	if ErrorLevel=0
+	{
+		MouseClick,Left,%vx%,%vy%
+		MouseClick,Left,%vx%,%vy%
+	}
+	if ErrorLevel=1
+	{
+		
+		Sleep, 2000
+		findGoogleResult()
+	}
+}
 
 F6::
 Run, chrome.exe
@@ -47,13 +77,13 @@ Sleep, 2000
 
 Clipboard = ÄíÆÎ
 
-MouseClick, l, 737, 430
+findGoogle()
 send, ^v
+Sleep, 1000
 send, {Enter}
 Sleep, 2000
 
-MouseClick, l, 195, 306
-MouseClick, l, 195, 306
+findGoogleResult()
 
 Sleep, 2000
 
@@ -78,7 +108,7 @@ Loop, 50
 	MouseClick, WheelUp,,,1
 
 
-Sleep, 4000
+Sleep, 2000
 WinClose,ahk_class Chrome_WidgetWin_1
 Run,%A_ScriptDir%\test.bat
 
