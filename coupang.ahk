@@ -1,6 +1,6 @@
 findCaryophy()
 {
-	ImageSearch,vx,vy,0,0,A_ScreenWidth,A_ScreenHeight,Ä³¸®¿ÀÇÇ.png
+	ImageSearch,vx,vy,0,0,A_ScreenWidth,A_ScreenHeight,ìºë¦¬ì˜¤í”¼.png
 	if ErrorLevel=0
 	{
 		MouseClick,Left,%vx%,%vy%
@@ -18,7 +18,7 @@ findCaryophy()
 		{
 			MouseClick, WheelDown, , , 6
 			findCaryophy()
-			;MsgBox,ÀÎ½ÄÀ»¸øÇÑ´Ù ¹Ù²ã¶ó
+			;MsgBox,ì¸ì‹ì„ëª»í•œë‹¤ ë°”ê¿”ë¼
 		}
 	}
 }
@@ -75,7 +75,7 @@ Run, chrome.exe
 ControlClick, x1284 y423, ahk_class Chrome_WidgetWin_1
 Sleep, 2000
 
-Clipboard = ÄíÆÎ
+Clipboard = ì¿ íŒ¡
 
 findGoogle()
 send, ^v
@@ -89,7 +89,7 @@ Sleep, 2000
 
 findCoupang()
 
-Clipboard = Ä³¸®¿ÀÇÇ
+Clipboard = ìºë¦¬ì˜¤í”¼
 send, ^v
 
 Sleep, 1500
@@ -116,7 +116,3 @@ F4::Reload
 F2::Pause
 
 F3::ExitApp
-
-
-	
-
