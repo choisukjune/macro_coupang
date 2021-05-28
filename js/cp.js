@@ -21,7 +21,8 @@ var querystring = require('querystring');
 var ROOT_PATH = process.cwd();
 
 var CP_COMMAND = {};
-	CP_COMMAND.MONGO = "..\\Binary\\Mongodb\\mongodb-win32-x86_64-windows-4.4.3\\bin\\mongo";
+	CP_COMMAND.MONGO = "..\\Binary\\Mongodb\\mongodb-win32-x86_64-windows-4.4.6\\bin\\mongo";
+
 	//CP_COMMAND.MONGO = "mongo";
 
 var DBJS_DIRECTORY_PATH = ROOT_PATH + "/dbjs/";

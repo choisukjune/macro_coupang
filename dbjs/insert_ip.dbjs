@@ -1,7 +1,7 @@
-var date = "20210526";
-var dateTime = 20210526202004;
+var date = "20210528";
+var dateTime = 20210528104706;
 
-var _o = { ip : "223.38.28.70" }
+var _o = { ip : "222.108.69.195" }
 
 var db0 = db.getSiblingDB("log");
 var col0 = db0.getCollection( date );
