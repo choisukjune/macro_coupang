@@ -101,11 +101,16 @@ findCaryophy()
 
 Sleep, 2000
 
-Loop, 100
-	MouseClick, WheelDown,,,1
-
 Loop, 50
-	MouseClick, WheelUp,,,1
+{
+	Send, {WheelDown}
+	Sleep, 75
+}	
+Loop, 50
+{
+	Send, {WheelUp}
+	Sleep, 75
+}
 
 
 Sleep, 2000
