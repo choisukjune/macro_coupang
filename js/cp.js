@@ -151,8 +151,25 @@ var check_my_ip = function(cbFunction){
 	bat.stderr.on('data', function(data){ 
 		console.log( iconv.decode( data, "euc-kr") )
 	});
-	bat.on('exit', function(code){ 
-		console.log(`Child exited with code ${code}`); 
+	bat.on('exit', function(code){
+		if( code == 6 )
+		{
+			console.log(`Child exited with code ${code}`);
+			console.log("re Start!") 
+			FN00();
+		}
+		else if( code == 28 )
+		{
+			console.log(`Child exited with code ${code}`);
+			console.log("re Start! - Time out!") 
+			FN00();
+		}
+		else
+		{
+			console.log(`Child exited with code ${code}`); 
+			console.log(`정상종료`); 
+		}
+		
 	});
 
 }
